@@ -1,0 +1,116 @@
+.header {
+    text-align: center;
+    background: #fff;
+    font-style: 'Skolar Gujarati Regular';
+    border-bottom: 1px solid #BBA898;
+}
+
+
+h2 {
+    color: #BBA898;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.header__logo {
+    color: #817669;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.contact-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.form__group {
+    color: #817669;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form__label--required {
+    padding: 10px 6px;
+    border-radius: 3px;
+    color: #ff0000;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+.form__input--text input,
+.form__input--textarea textarea {
+    padding: 10px;
+    width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    appearance: none;
+}
+
+.form__input--text input {
+    height: 40px;
+}
+
+.form__input--textarea textarea {
+    height: 180px;
+}
+
+.form__button {
+    margin-top: 30px;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 30%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #817669;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.name-inputs {
+    width: 600px;
+    display: flex;
+    gap: 10px;
+    /* 入力欄の間隔 */
+}
+
+.name-inputs input {
+    width: 50%;
+    /* 姓名の入力欄を均等に */
+}
+
+.tel-inputs {
+    width: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.tel-separator {
+    margin: 0 5px;
+    /* ハイフンの左右の余白 */
+}

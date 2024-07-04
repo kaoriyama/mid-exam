@@ -1,0 +1,143 @@
+.header {
+    background: #fff;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.header__logo {
+    color: #cd9f64;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.confirm__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.confirm__heading {
+    margin-bottom: 40px;
+    color:#cd9f64;
+    text-align: center;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.confirm-table {
+    border: 1px solid #ddd;
+}
+
+.confirm-table__inner {
+    width: 100%;
+    color: #fff;
+    font-family: serif;
+}
+
+.confirm-table__header {
+    padding: 15px;
+    width: 20%;
+    border-bottom: 1px solid #ddd;
+    background-color: #BBA898;
+    font-weight: bold;
+}
+
+.confirm-table__text {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.confirm-table__text input {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.confirm-table__row:last-child .confirm-table__header,
+.confirm-table__row:last-child .confirm-table__text {
+    border-bottom-width: 0;
+}
+
+.form__button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 30%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #817669;
+    color: #fff;
+    cursor: pointer;
+}
+.fix__button{
+    margin-left: 40px;
+    color:#817669;
+}
+
+.btn-outline-secondary {
+    padding: 10px;
+    width: 30%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    color: #8c6b3f;
+    cursor: pointer;
+}
+
+/* 既存のCSSはそのままで、以下を追加 */
+
+.name-inputs,
+.tel-inputs {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.name-inputs input {
+    flex: 1;
+    min-width: 0;
+}
+
+.tel-inputs input {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+
+.tel-inputs input:first-child {
+    flex: 0 0 60px;
+}
+
+.tel-inputs input:nth-child(3),
+.tel-inputs input:nth-child(5) {
+    flex: 0 0 80px;
+}
+
+.tel-separator {
+    margin: 0 5px;
+    flex: 0 0 auto;
+}
+
+.confirm-table__text .name-inputs input,
+.confirm-table__text .tel-inputs input {
+    width: auto;
+}
+
+.confirm-table__text .name-inputs,
+.confirm-table__text .tel-inputs {
+    width: 100%;
+}
