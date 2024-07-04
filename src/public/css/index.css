@@ -1,7 +1,6 @@
 .header {
     text-align: center;
     background: #fff;
-    font-style: 'Skolar Gujarati Regular';
     border-bottom: 1px solid #BBA898;
 }
 
@@ -104,13 +103,13 @@ h2 {
     /* 姓名の入力欄を均等に */
 }
 
-.tel-inputs {
+.tell-inputs {
     width: 600px;
     display: flex;
     align-items: center;
 }
 
-.tel-separator {
+.tell-separator {
     margin: 0 5px;
     /* ハイフンの左右の余白 */
 }

@@ -33,14 +33,14 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text name-inputs">
-              <input type="text" name="lastname" placeholder="例: 山田" value="{{ old('lastname') }}" />
-              <input type="text" name="firstname" placeholder="例: 太郎" value="{{ old('firstname') }}" />
+              <input type="text" name="last_name" placeholder="例: 山田" value="{{ old('last_name') }}" />
+              <input type="text" name="first_name" placeholder="例: 太郎" value="{{ old('first_name') }}" />
             </div>
             <div class="form__error">
-              @error('lastname')
+              @error('last_name')
               {{ $message }}
               @enderror
-              @error('firstname')
+              @error('first_name')
               {{ $message }}
               @enderror
             </div>
@@ -69,12 +69,12 @@
             <span class="form__label--required">※</span>
           </div>
           <div class="form__group-content">
-            <div class="form__input--text tel-inputs">
-              <input type="tel" name="tel1" placeholder="080" value="{{ old('tel1') }}" maxlength="3" />
-              <span class="tel-separator">-</span>
-              <input type="tel" name="tel2" placeholder="1234" value="{{ old('tel2') }}" maxlength="4" />
-              <span class="tel-separator">-</span>
-              <input type="tel" name="tel3" placeholder="5678" value="{{ old('tel3') }}" maxlength="4" />
+            <div class="form__input--text tell-inputs">
+              <input type="tell" name="tel1" placeholder="080" value="{{ old('tel1') }}" maxlength="3" />
+              <span class="tell-separator">-</span>
+              <input type="tell" name="tel2" placeholder="1234" value="{{ old('tel2') }}" maxlength="4" />
+              <span class="tell-separator">-</span>
+              <input type="tell" name="tel3" placeholder="5678" value="{{ old('tel3') }}" maxlength="4" />
             </div>
             <div class="form__error">
               @error('tel1')

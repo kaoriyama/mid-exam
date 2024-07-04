@@ -18,7 +18,7 @@
     </div>
   </header>
   <main>
-    <div class="register-form__content">
+  <div class="register-form__content">
       <div class="register-form__heading">
         <h2>Register</h2>
       </div>

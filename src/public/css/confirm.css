@@ -1,3 +1,4 @@
+
 .header {
     background: #fff;
 }
@@ -11,7 +12,7 @@
 }
 
 .header__logo {
-    color: #cd9f64;
+    color: #BBA898;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
@@ -98,10 +99,8 @@
     cursor: pointer;
 }
 
-/* 既存のCSSはそのままで、以下を追加 */
-
 .name-inputs,
-.tel-inputs {
+.tall-inputs {
     display: flex;
     gap: 10px;
     width: 100%;
@@ -112,32 +111,32 @@
     min-width: 0;
 }
 
-.tel-inputs input {
+.tell-inputs input {
     flex: 1;
     min-width: 0;
     text-align: center;
 }
 
-.tel-inputs input:first-child {
+.tell-inputs input:first-child {
     flex: 0 0 60px;
 }
 
-.tel-inputs input:nth-child(3),
-.tel-inputs input:nth-child(5) {
+.tell-inputs input:nth-child(3),
+.tell-inputs input:nth-child(5) {
     flex: 0 0 80px;
 }
 
-.tel-separator {
+.tell-separator {
     margin: 0 5px;
     flex: 0 0 auto;
 }
 
 .confirm-table__text .name-inputs input,
-.confirm-table__text .tel-inputs input {
+.confirm-table__text .tell-inputs input {
     width: auto;
 }
 
 .confirm-table__text .name-inputs,
-.confirm-table__text .tel-inputs {
+.confirm-table__text .tell-inputs {
     width: 100%;
 }

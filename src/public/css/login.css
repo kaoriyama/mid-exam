@@ -1,13 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: serif;
+    background: #F1ECE7;
 }
 
-main{
-    background:#F1ECE7; 
-}
 .header {
-    /* ここ直す 白を小さく*/
-    background: #fff;
+    background-color: #fff;
     border-bottom: 1px solid #ddd;
 }
 
@@ -16,13 +13,12 @@ main{
     padding: 20px 15px;
     max-width: 1230px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .header__logo {
-    /* ↓logoの位置 */
-    margin-left: 100px; 
+    margin: 0 auto;
     color: #817669;
     text-decoration: double;
     /* 上直す */
@@ -37,11 +33,12 @@ main{
     border: 1px solid #BBA898;
     padding: 5px 10px;
     border-radius: 3px;
+    position: absolute;
+    right: 15px;
 }
 
 .login-form__content {
     color: #BBA898;
-    background-color: #fff;
     margin: 0 auto;
     padding: 30px 15px;
     max-width: 1230px;
@@ -69,6 +66,7 @@ main{
     border: 1px solid #ddd;
     padding: 30px;
     border-radius: 5px;
+    background-color: #fff;
 }
 
 .form__group {
@@ -101,8 +99,8 @@ main{
 
 .form {
   margin: 0 auto;
-  width: 80%; /* 70%から80%に変更 */
-  max-width: 800px; /* 720pxから800pxに変更 */
+  width: 80%; 
+  max-width: 800px; 
   border: 1px solid #ddd;
   padding: 30px;
   border-radius: 5px;
