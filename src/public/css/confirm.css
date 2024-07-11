@@ -131,12 +131,29 @@
     flex: 0 0 auto;
 }
 
-.confirm-table__text .name-inputs input,
+
 .confirm-table__text .tell-inputs input {
     width: auto;
 }
 
-.confirm-table__text .name-inputs,
+
 .confirm-table__text .tell-inputs {
     width: 100%;
+}
+
+.confirm-table__text .name-inputs {
+    display: flex;
+    gap: 3px;
+    /* 姓と名の間隔 */
+    justify-content: flex-start;
+    /* 左寄せにする */
+}
+
+.confirm-table__text .name-inputs input {
+    width: auto;
+    /* 幅を自動に設定 */
+    min-width: 100px;
+    /* 最小幅を設定（必要に応じて調整） */
+    flex: 0 1 auto;
+    /* flex-grow: 0, flex-shrink: 1, flex-basis: auto */
 }

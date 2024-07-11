@@ -33,8 +33,8 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text name-inputs">
-              <input type="text" name="last_name" placeholder="例: 山田" value="{{ old('last_name') }}" />
-              <input type="text" name="first_name" placeholder="例: 太郎" value="{{ old('first_name') }}" />
+              <input type="name" name="last_name" placeholder="例: 山田" value="{{ old('last_name') }}" />
+              <input type="name" name="first_name" placeholder="例: 太郎" value="{{ old('first_name') }}" />
             </div>
             <div class="form__error">
               @error('last_name')
@@ -47,6 +47,29 @@
           </div>
         </div>
         
+        <!-- 性別追加 -->
+        <div class="form__group">
+  <div class="form__group-title">
+    <span class="form__label--item">性別</span>
+    <span class="form__label--required">※</span>
+  </div>
+  <div class="form__group-content">
+    <div class="form__input--radio">
+      <input type="radio" name="gender" value="男性" id="male" {{ old('gender') == '男性' ? 'checked' : '' }}>
+      <label for="male">男性</label>
+      <input type="radio" name="gender" value="女性" id="female" {{ old('gender') == '女性' ? 'checked' : '' }}>
+      <label for="female">女性</label>
+      <input type="radio" name="gender" value="その他" id="other" {{ old('gender') == 'その他' ? 'checked' : '' }}>
+      <label for="other">その他</label>
+    </div>
+    <div class="form__error">
+      @error('gender')
+      {{ $message }}
+      @enderror
+    </div>
+  </div>
+</div>
+
         <div class="form__group">
           <div class="form__group-title">
             <span class="form__label--item">メールアドレス</span>
@@ -116,6 +139,30 @@
             </div>
             <div class="form__error">
               @error('building')
+              {{ $message }}
+              @enderror
+            </div>
+          </div>
+        </div>
+
+        <div class="form__group">
+          <div class="form__group-title">
+            <span class="form__label--item">お問い合わせの種類</span>
+            <span class="form__label--required">※</span>
+          </div>
+          <div class="form__group-content">
+            <div class="form__input--select">
+              <select name="category_id">
+                <option value="">選択してください</option>
+                @foreach($categories as $category)
+                  <option value="{{ $category->id }}" {{ old('category_id') == $category->id ? 'selected' : '' }}>
+                    {{ $category->name }}
+                  </option>
+                @endforeach
+              </select>
+            </div>
+            <div class="form__error">
+              @error('category_id')
               {{ $message }}
               @enderror
             </div>
